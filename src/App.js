@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
-     <h1>hi</h1>
-     <button className='bg-red-500'>tail</button>
-    </div>
+    <Layout>
+      <h1>Content</h1>
+    </Layout>
   );
 }
 
