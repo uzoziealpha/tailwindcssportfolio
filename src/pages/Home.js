@@ -1,5 +1,6 @@
 import React from "react";
 //import { FaReact } from "react-icons/fa";
+import AOS from'aos';
 import Layout from "../components/Layout";
 import {
   FaBootstrap,
@@ -21,6 +22,9 @@ import {
   SiTailwindcss
 } from "react-icons/si"
 
+
+
+AOS.init()
 function Home() {
   return (
     <Layout>
@@ -44,10 +48,10 @@ function Home() {
          
 
             <div className="font-bold text-black md:px-5">
-              <h1 className="text-7xl md:text-4xl">
+              <h1 className="text-7xl md:text-4xl" data-aos='slide-right'>
                 Hi, I'm <b className="text-yellow-500">Obi </b>
               </h1>
-              <h1 className="text-4xl md:text-xl">
+              <h1 className="text-4xl md:text-xl" data-aos='slide-left'>
                 A FullStack <b className="text-purple-500">Developer</b>
               </h1>
             </div>
@@ -57,7 +61,7 @@ function Home() {
         {/* Technologes Used */}
 
         <div className='mt-19'>
-            <h1 className='text-4xl text-black-800 font-bold text-center my-8'> Technologies I USE</h1>
+            <h1 className='text-4xl text-black-800 font-bold text-center my-8' data-aos='slide-up'> Technologies I USE</h1>
           <div className='grid md:grid-cols-1 grid-cols-4'>
             <FaReact size={130} color="cyan" className="w-full text-center animate-bounce" />
             <FaBootstrap
@@ -115,7 +119,7 @@ function Home() {
                <h1 className="text-white font-bold text-4xl py-10">My Tech Interests</h1>
             </div>
             <div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 mt-20 rounded-lg hover:bg-gray-700 hover:text-white'>
-            <div className='h-96'>
+            <div className='h-96' data-aos='zoom-in'>
             <lottie-player 
              src="https://assets7.lottiefiles.com/packages/lf20_vbhx85ve.json" 
              background="transparent"  
@@ -212,7 +216,7 @@ function Home() {
                          name: 'Obi Uzozie',
                          age: null,
                          gender: 'male',
-                         country: 'Nigerian/American',
+                         country: 'Nigerian',
                          Hobbies: ['3d Sculpting, Researching, Fitness']
                      }, null, 2)}
                    </pre>
