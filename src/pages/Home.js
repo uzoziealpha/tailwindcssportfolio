@@ -17,6 +17,10 @@ import {
   DiMongodb,
 } from "react-icons/di";
 
+import {
+  SiTailwindcss
+} from "react-icons/si"
+
 function Home() {
   return (
     <Layout>
@@ -37,6 +41,7 @@ function Home() {
                 autoplay
               ></lottie-player>
             </div>
+         
 
             <div className="font-bold text-black md:px-5">
               <h1 className="text-7xl md:text-4xl">
@@ -54,7 +59,7 @@ function Home() {
         <div className='mt-19'>
             <h1 className='text-4xl text-black-800 font-bold text-center my-8'> Technologies I USE</h1>
           <div className='grid md:grid-cols-1 grid-cols-4'>
-            <FaReact size={140} color="cyan" className="w-full text-center animate-bounce" />
+            <FaReact size={130} color="cyan" className="w-full text-center animate-bounce" />
             <FaBootstrap
               size={140}
               color="blue"
@@ -96,15 +101,20 @@ function Home() {
               color="purple"
               className="w-full text-center mt-20 animate-bounce"
             />
+           
+            <SiTailwindcss 
+            size={140}
+            color="skyblue"
+            className="w-full text-center mt-20 animate-bounce"/>
           </div>
 
 
         {/* Interest Banner */}
-        <div>
-            <div className='text-center h-52 bg-banner'>
-               <h1 className="text-white font-bold text-4xl py-10">Interest</h1>
+           <div className="my-20">
+            <div className='text-center h-19 bg-banner'>
+               <h1 className="text-white font-bold text-4xl py-10">My Tech Interests</h1>
             </div>
-
+            <div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 mt-20 rounded-lg hover:bg-gray-700 hover:text-white'>
             <div className='h-96'>
             <lottie-player 
              src="https://assets7.lottiefiles.com/packages/lf20_vbhx85ve.json" 
@@ -115,11 +125,65 @@ function Home() {
             </lottie-player>
             </div>
 
-            <p className='text-2xl'>
+            <p className='text-xl my-5 font-semibold md:px-5 px-14 py-10'>
               My 2022 interests are in Solidity, Truffle and Web3 for NFTs (Non-Fungible-Tokens) - Blockchain  Machine learning , A.I , NLP, RPA and Deep Learning
             </p>
         </div>
-        </div>
+
+                {/* Dev Stack Banner */}
+                <div className="my-20">
+                <div className='text-center h-19 bg-banner'>
+                <h1 className="text-white font-bold text-4xl py-10">Dev Stack I Use</h1>
+                </div>
+                <div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 mt-20 rounded-lg hover:bg-gray-700 hover:text-white'>
+                <div className='h-96'>
+                <lottie-player 
+                   src="https://assets1.lottiefiles.com/packages/lf20_aptscmnx.json"  
+                   background="transparent"  
+                   speed="1"  
+                   loop 
+                   autoplay>
+                </lottie-player>
+                </div>
+
+             <div className="grid md:grid-cols-1 grid-cols-3 p-5">
+
+               <div className='text-left'>
+                 <h1 className='text-xl font-bold'>Front End</h1>
+                 <hr/>
+                <p className='font semi-bold mt-2'>HTML/CSS</p>
+                <p className='font semi-bold mt-2'>React</p>
+                <p className=' font semi-bold mt-2'>Javascript</p>
+                <p className=' font semi-bold mt-2'>Redux</p>
+               </div>
+           
+               <div className='text-center'>
+                 <h1 className='text-xl font-bold'>UI / UX</h1>
+                 <hr/>
+                <p className='font semi-bold mt-2'>Saas</p>
+                <p className='font semi-bold mt-2'>Bootstrap</p>
+                <p className=' font semi-bold mt-2'>Tailwind Css</p>
+                <p className=' font semi-bold mt-2'>Ant Design</p>
+                <p className=' font semi-bold mt-2'>Material Ui</p>
+                <p className=' font semi-bold mt-2'>Animation</p>
+                <p className=' font semi-bold mt-2'>Framer Motion</p>
+               </div>
+
+               <div className='text-right'>
+                 <h1 className='text-xl font-bold'>Backend and DB</h1>
+                 <hr/>
+                <p className='font semi-bold mt-2'>Mongo DB</p>
+                <p className='font semi-bold mt-2'>AWS S2</p>
+                <p className=' font semi-bold mt-2'>My Sql</p>
+                <p className=' font semi-bold mt-2'>Node Js</p>
+                <p className=' font semi-bold mt-2'>Express Js</p>
+               </div>
+           
+          </div>
+         </div>
+       </div>
+      </div>
+      </div>
       </div>
     </Layout>
   );
