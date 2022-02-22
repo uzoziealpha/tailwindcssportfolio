@@ -178,13 +178,51 @@ function Home() {
                 <p className=' font semi-bold mt-2'>Node Js</p>
                 <p className=' font semi-bold mt-2'>Express Js</p>
                </div>
+               </div>
+               </div>
+             </div>
+
+
+            {/*   MY info*/}
+            <div>
+              <h1 className='text-4xl text-gray-500 text-center font-bold'>
+              About
+            </h1>
            
+
+
+            <div className='h-screen relative text-gray-800'>
+              <div className='h-full'>
+              <lottie-player 
+              src="https://assets8.lottiefiles.com/packages/lf20_wwgmlwlh.json" 
+              mode="bounce" 
+              background="transparent"  
+              speed="4"  
+               loop
+               autoplay>
+             </lottie-player>
+              </div>
+              <div className='absolute inset-0 flex flex-col items-center justify-center'>
+                   <h1 className='text-2xl font-bold '>Hi, Hello, Bonjour, 你好, Привет</h1>
+
+                   <hr/>
+
+                   <pre className='text xl md:text-sm my-5 font-pop font-semibold text-white'>
+                     {JSON.stringify({
+                         name: 'Obi Uzozie',
+                         age: null,
+                         gender: 'male',
+                         country: 'Nigerian/American',
+                         Hobbies: ['3d Sculpting, Researching, Fitness']
+                     }, null, 2)}
+                   </pre>
+              </div>
+            </div>
+          </div>
           </div>
          </div>
        </div>
-      </div>
-      </div>
-      </div>
+      
     </Layout>
   );
 }
