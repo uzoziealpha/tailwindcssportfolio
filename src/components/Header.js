@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import { FaBars } from 'react-icons/fa';
 
 function Header() {
     //hooks
@@ -19,49 +20,61 @@ function Header() {
     },
   ];
 
-  return (
-    <div className="text-white font-pop">
-      <div className="flex bg-theme justify-between items-center p-2 shadow-lg">
-        <div className='flex justify-between w-full'>
-          <h1 className="text-4xl font-semibold">OBI</h1>
-         <button
-           onClick={()=> {
-               //logic to make the menu show menu when its hidden it can be ovveridden 
-               if(showMenu=='md:hidden'){
-                  setShowMenu('')
-               }else {
 
-                 setShowMenu('md:hidden');
-               }
-           }}
-          className='lg:hidden xl:hidden 2xl:hidden md:flex'>MENU</button>
+  const pathname = window.location.pathname
+
+  
+  return (
+    <div className="text-white font-mont fixed top-0 left-0 right-0 z-50">
+      <div
+        className={`flex bg-theme justify-between items-center p-2 shadow-lg ${
+          showMenu == "" && "md:flex-col"
+        } `}
+      >
+        <div className="flex justify-between items-center w-full">
+          <Link to='/'><h1 className="text-4xl font-semibold hover:text-purple-500 cursor-pointer">OBI</h1></Link>
+
+          <FaBars
+            onClick={() => {
+              if (showMenu == "md:hidden") {
+                setShowMenu("");
+              } else {
+                setShowMenu("md:hidden");
+              }
+            }}
+            className="lg:hidden xl:hidden 2xl:hidden md:flex cursor-pointer"
+          />
         </div>
-        
+
         <div className="flex md:hidden">
           {menuItems.map((item) => {
             return (
-              <li className="list-none mx-5">
-                <Link to={`/${item.key}`}>{item.title}</Link>
+              <li
+                className={`list-none mx-5 px-5 ${
+                  item.key == pathname && "bg-purple text-white rounded-md"
+                }`}
+              >
+                <Link to={`${item.key}`}>{item.title}</Link>
               </li>
             );
           })}
         </div>
-      
 
-        <div className={`md:flex flex-col 2xl:hidden xl:hidden ${showMenu}`}>
+        <div
+          className={`mt-5 md:flex items-start justify-start w-full flex-col lg:hidden 2xl:hidden xl:hidden ${showMenu}`}
+        >
           {menuItems.map((item) => {
             return (
-              <li className="list-none mx-5">
-                <Link to={`/${item.key}`}>{item.title}</Link>
+              <li
+                className={`list-none mt-5 ${
+                  item.key == pathname && "bg-purple text-white rounded-md px-5"
+                }`}
+              >
+                <Link to={`${item.key}`}>{item.title}</Link>
               </li>
             );
           })}
         </div>
-
-
-
-
-
       </div>
     </div>
   );

@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors')
+
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -7,7 +10,8 @@ module.exports = {
     extend: {
       colors:{
         theme : '#2A2A2A',
-        primary : '#5F9EA0' ,
+        primary : '#5F9EA0',
+        purple : '#d946ef',
         
       },
       fontFamily : {
@@ -29,7 +33,8 @@ module.exports = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
-    }
+    },
+
   },
   variants: {
     extend: {},
