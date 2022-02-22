@@ -87,7 +87,6 @@ function Home() {
               color="black"
               className="w-full text-center mt-19"
             />
-            
             <DiSass size={140} color="pink" className="w-full text-center mt-19" />
             
             <DiMongodb size={140} color="green" className="w-full text-center mt-19" />
@@ -97,8 +96,29 @@ function Home() {
               color="purple"
               className="w-full text-center mt-20 animate-bounce"
             />
-            
           </div>
+
+
+        {/* Interest Banner */}
+        <div>
+            <div className='text-center h-52 bg-banner'>
+               <h1 className="text-white font-bold text-4xl py-10">Interest</h1>
+            </div>
+
+            <div className='h-96'>
+            <lottie-player 
+             src="https://assets7.lottiefiles.com/packages/lf20_vbhx85ve.json" 
+             background="transparent"  
+             speed="0.5"  
+             loop 
+             autoplay>
+            </lottie-player>
+            </div>
+
+            <p className='text-2xl'>
+              My 2022 interests are in Solidity, Truffle and Web3 for NFTs (Non-Fungible-Tokens) - Blockchain  Machine learning , A.I , NLP, RPA and Deep Learning
+            </p>
+        </div>
         </div>
       </div>
     </Layout>

@@ -13,6 +13,7 @@ module.exports = {
         primary : '#5F9EA0',
         purple : '#d946ef',
         white : '#ccfbf1',
+        banner: '#c026d3'
         
       },
       fontFamily : {
