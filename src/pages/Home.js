@@ -51,51 +51,51 @@ function Home() {
 
         {/* Technologes Used */}
 
-        <div className='mt-20'>
+        <div className='mt-19'>
             <h1 className='text-4xl text-black-800 font-bold text-center my-8'> Technologies I USE</h1>
           <div className='grid md:grid-cols-1 grid-cols-4'>
-            <FaReact size={180} color="cyan" className="w-full text-center" />
+            <FaReact size={140} color="cyan" className="w-full text-center animate-bounce" />
             <FaBootstrap
-              size={180}
+              size={140}
               color="blue"
-              className="w-full text-center mt-20"
+              className="w-full text-center mt-19"
             />
             <FaJsSquare
-              size={180}
+              size={140}
               color="yellow"
-              className="w-full text-center mt-20"
+              className="w-full text-center mt-19"
             />
             
-            <FaNodeJs size={180} color="green" className="w-full text-center mt-20" />
+            <FaNodeJs size={140} color="green" className="w-full text-center mt-19 animate-bounce" />
             
             <DiRubyRough
-              size={180}
+              size={140}
               color="red"
-              className="w-full text-center mt-20"
+              className="w-full text-center mt-19"
             />
             
-            <DiDocker size={180} color="cyan" className="w-full text-center mt-20" />
+            <DiDocker size={140} color="cyan" className="w-full text-center mt-19" />
             
             <FaPython
-              size={180}
+              size={140}
               color="green"
-              className="w-full text-center mt-20"
+              className="w-full text-center mt-19"
             />{" "}
             
             <DiGithubBadge
-              size={180}
+              size={140}
               color="black"
-              className="w-full text-center mt-20"
+              className="w-full text-center mt-19"
             />
             
-            <DiSass size={180} color="pink" className="w-full text-center mt-20" />
+            <DiSass size={140} color="pink" className="w-full text-center mt-19" />
             
-            <DiMongodb size={180} color="green" className="w-full text-center mt-20" />
+            <DiMongodb size={140} color="green" className="w-full text-center mt-19" />
         
             <FaEthereum
-              size={180}
+              size={140}
               color="purple"
-              className="w-full text-center mt-20"
+              className="w-full text-center mt-20 animate-bounce"
             />
             
           </div>
